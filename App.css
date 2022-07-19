@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(196, 48, 215, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero {
@@ -23,7 +23,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(196, 48, 215, 0.2);
   border-radius: 7px;
 }
 .log {
@@ -38,13 +37,13 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
-  font-weight: 400;
+  font-weight: 600;
 }
 .login-btn {
   text-decoration: none;
   color: #333;
   margin-right: 15px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .btn {
   display: inline-block;
@@ -107,7 +106,6 @@ nav ul li a {
   display: flex;
   justify-content: space-between;
   padding: 50px 70px;
-  background-color: rgb(196, 48, 215, 0.2);
 }
 #features > div {
   width: 200px;
@@ -122,7 +120,6 @@ nav ul li a {
 #features > div img {
   width: 90%;
   height: 70%;
-  background-color: #c430d7;
 }
 #features > div button {
   width: 100px;
@@ -144,7 +141,6 @@ nav ul li a {
   justify-content: space-between;
   gap: 20px;
   padding: 50px 200px;
-  background-color: rgb(196, 48, 215, 0.2);
 }
 #gallery > div {
   width: 200px;
@@ -160,18 +156,29 @@ nav ul li a {
 #gallery > div img {
   width: 90%;
   height: 70%;
-  background-color: #c430d7;
 }
 #gallery > div h3 {
   width: 100px;
   height: 30px;
   background-color: #c430d7;
   border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
   text-align: center;
   line-height: 30px;
+  transition: 0.5s ease;
+  font-size: 20px;
+  font-weight: 400;
 }
 #gallery > div:hover {
   width: 600px;
+}
+#gallery > div:hover h3 {
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  width: 150px;
+  height: 35px;
 }
 
 #newsltter {
@@ -221,12 +228,15 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 100px 200px;
-  background-color: rgb(196, 48, 215, 0.5);
 }
 .f-logo {
-  width: 70px;
-  height: 30px;
-  background-color: #c430d7;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+}
+.f-logo img {
+  width: 100px;
+  height: 50px;
   border-radius: 25px;
 }
 .s-media {
@@ -238,8 +248,8 @@ footer {
 .s-media img {
   width: 30px;
   height: 30px;
-  background-color: #df4881;
   border-radius: 7px;
+  cursor: pointer;
 }
 .links {
   display: flex;
@@ -254,17 +264,22 @@ footer {
   gap: 20px;
   text-decoration: none;
   color: #000;
-  border-bottom: 2px solid #c430d7;
   font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c430d7;
 }
 .footer {
   width: 300px;
   text-align: center;
   height: 50px;
-  background-color: rgb(196, 48, 215, 0.5);
   width: 100%;
   line-height: 50px;
 }
+.footer::first-letter {
+  font-size: 20px;
+  font-weight: 600;
+}
 .footer span {
   color: #c430d7;
+  font-weight: 700;
 }
